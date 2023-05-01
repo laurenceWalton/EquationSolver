@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge"> 
+    <title>Equation Evaluator</title>
+    <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 400px; /* Add this line */
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .text {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            outline: none;
+            width: 300px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .result {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto; 
+            margin-top: 20px;
+            height: 250px;
+        }
+
+        .result-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Equation Evaluator</h1>
+    <div class="text">
+        <p>Evaluate a single variable equation, for example: x - 10 = 15 + x</p>
+    </div>
+    <div class="form">
+        <form method="post">
+            <input type="text" name="text" id="text" placeholder="Enter an equation">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    {% if input_text %}
+    <div class="result">
+        <div class="result-item">Input equation: {{ input_text }}</div>
+        <div class="result-item">Parsed equation: {{ result }}</div>
+    </div>
+    {% endif %}
+</body>
+</html>
