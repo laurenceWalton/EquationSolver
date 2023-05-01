@@ -1,7 +1,12 @@
 from flask import Flask, request, render_template
-from equationParser import parser
+from equation_parser import EquationParser
+from equation_evaluator import EquationEvaluator
 
 app = Flask(__name__)
+
+# Initialize the parser and evaluator
+parser = EquationParser()
+evaluator = EquationEvaluator(parser)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
