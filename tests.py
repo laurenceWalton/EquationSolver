@@ -1,4 +1,4 @@
-from eqsolver import parser
+from equationParser import parser
 
 def test_runner(test_cases):
     for i, (equation, expected_parsed) in enumerate(test_cases):
@@ -18,5 +18,6 @@ test_cases_parsing = [
 ]
 
 # Run the parsing tests - no equation evaluation yet
+print("Running parsing tests...")
 test_runner(test_cases_parsing)
 

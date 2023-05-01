@@ -80,8 +80,7 @@ def p_error(p):
 # Build the parser
 parser = yacc.yacc(debug=False, write_tables=False)
 
-# # Test parsing
-# data = "2(4x + 3) + 6 = 24 -4x"
-
-# parsed = parser.parse(data)
+# # Test parsing (uncomment to test, or run tests.py to run more parsing tests)
+# equation = "2(x) = 24"
+# parsed = parser.parse(equation)
 # print(parsed)
