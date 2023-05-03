@@ -7,7 +7,7 @@
 
 ## 1. Getting Started
 
-We recommend using a virtual environment (venv)
+I recommend using a virtual environment (venv)
 
 ### 2. Create a virtual environment
 
