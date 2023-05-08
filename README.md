@@ -35,7 +35,9 @@ source venv/bin/activate
 With the virtual environment activated, install Flask and OpenAI API:
 
 ```
-pip install Flask openai
+pip install Flask 
+pip install openai 
+pip install ply
 ```
 
 ### 4. Run the application
