@@ -12,8 +12,10 @@ evaluator = EquationEvaluator(parser)
 def index():
     if request.method == 'POST':
         text = request.form['text']
-        parsed = parser.parse(text)
-        return render_template('index.html', result=str(parsed), input_text=text)
+        
+        steps = evaluator.evaluate(text)
+
+        return render_template('index.html', result=str(steps), input_text=text)
     else:
         return render_template('index.html')
 

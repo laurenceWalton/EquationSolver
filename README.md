@@ -1,9 +1,12 @@
 # Basic Equation Solver
 
+Parsing of simple maths equations (single variable, see below for examples) and then a very evaluation method using a GPT API call. Parsing done using PLY (Python implementation of Lex/Yacc).
+
 ## Requirements
 
 - Python 3
 - Flask
+- OpenAI
 
 ### 1. Create a virtual environment
 
@@ -29,10 +32,10 @@ source venv/bin/activate
 
 ### 3. Install Flask
 
-With the virtual environment activated, install Flask:
+With the virtual environment activated, install Flask and OpenAI API:
 
 ```
-pip install Flask
+pip install Flask openai
 ```
 
 ### 4. Run the application
