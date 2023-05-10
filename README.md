@@ -1,6 +1,6 @@
 # Basic Equation Solver
 
-A web application that allows users to input a simple equation and receive step-by-step instructions on how to solve it. The application uses PLY for parsing, GPT-3.5 Turbo (ChatGPT) for evaluation, and Flask for the frontend. An online version is available [here](your-ec2-link).
+A web application that allows users to input a simple equation and receive step-by-step instructions on how to solve it. The application uses PLY for parsing, GPT-3.5 Turbo (ChatGPT) for evaluation, and Flask for the frontend. An online version is available [here](http://18.212.67.84:5000).
 
 ## How It Works
 
