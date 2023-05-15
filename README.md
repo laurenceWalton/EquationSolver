@@ -6,7 +6,7 @@ A web application that allows users to input a simple equation and receive step-
 
 ### Parsing Equations
 
-The application uses PLY (Python implementation of lex/yacc) to parse simple math equations into a tuple form (e.g., "-2 + 2x = 4" => ('=', ('+', ('*', 2.0, -1.0), ('*', 2.0, ('variable', 'x'))), 4.0)). This ensures the equations adhere to syntactic and semantic requirements.
+The application uses PLY (Python implementation of lex/yacc) to parse simple math equations into a tuple form (e.g., "-2 + 2x = 4" => ('=', ('+', ('\*', 2.0, -1.0), ('*', 2.0, ('variable', 'x'))), 4.0)). This ensures the equations adhere to syntactic and semantic requirements.
 
 ### Evaluating Expressions
 
@@ -14,7 +14,7 @@ To evaluate the expression (solve for the variable), a single GPT-3.5 Turbo (Cha
 
 ### Frontend
 
-Flask is used to create the basic application frontend, and an online version is hosted on AWS EC2.
+Flask is used to create the basic application frontend. 
 
 ## Run Locally
 
